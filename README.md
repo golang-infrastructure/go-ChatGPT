@@ -62,7 +62,7 @@ func main() {
 	// 把JWT放到这里
 	jwt := "xxx"
 
-	chat := chatgpt.NewChat(jwt)
+	chat := chatgpt.NewChatGPT(jwt)
 	talk, err := chat.Talk("你好，我的名字叫陈二！")
 	if err != nil {
 		fmt.Println(err.Error())

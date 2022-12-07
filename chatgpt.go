@@ -94,7 +94,7 @@ type ChatGPT struct {
 	parentMessageID string
 }
 
-func NewChat(jwt string) *ChatGPT {
+func NewChatGPT(jwt string) *ChatGPT {
 	return &ChatGPT{
 		jwt:           jwt,
 		authorization: "Bearer " + jwt,

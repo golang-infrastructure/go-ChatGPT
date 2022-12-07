@@ -10,7 +10,7 @@ func TestFoo(t *testing.T) {
 	// 把JWT Token放到这里
 	jwt := "xxxx"
 
-	chat := NewChat(jwt)
+	chat := NewChatGPT(jwt)
 	talk, err := chat.Talk("你好，我的名字叫陈二！")
 	assert.Nil(t, err)
 	t.Log(talk.Message.Content)
